@@ -14,7 +14,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#EFEFF6"
+    android:background="@color/Background"
     android:paddingBottom="30dp">
 
     <TextView
@@ -170,7 +170,7 @@
             android:layout_height="wrap_content"
             android:text="Edit"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/TherapiaGreen"
+            android:backgroundTint="@color/PrimaryPat"
             />
 
         <Button
@@ -191,8 +191,8 @@
         android:text="Show Report"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        android:backgroundTint="#FFEB3B"
-        android:textColor="@color/black"
+        android:backgroundTint="@color/SecondaryText"
+        android:textColor="@color/white"
         />
 
 </LinearLayout>

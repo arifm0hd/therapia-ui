@@ -54,7 +54,7 @@
     </LinearLayout>
 
     <ImageView
-        android:layout_width="400dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:id="@+id/detailImage"
         android:padding="8dp"
@@ -62,13 +62,15 @@
         android:src="@drawable/baseline_upload_24"
         android:scaleType="fitCenter"
         android:background="@drawable/rounded_background"
-        android:layout_margin="8dp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="20dp"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Description"
+        android:textColor="@color/PrimaryText"
         android:layout_marginLeft="20dp"
         android:layout_marginVertical="7dp"
         />
@@ -90,6 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Location"
+        android:textColor="@color/PrimaryText"
         android:layout_marginLeft="20dp"
         android:layout_marginVertical="7dp"
         />
@@ -111,6 +114,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Date"
+        android:textColor="@color/PrimaryText"
         android:layout_marginLeft="20dp"
         android:layout_marginVertical="7dp"
         />
@@ -133,6 +137,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Time"
+        android:textColor="@color/PrimaryText"
         android:layout_marginLeft="20dp"
         android:layout_marginVertical="7dp"
         />
@@ -154,6 +159,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Patient Name"
+        android:textColor="@color/PrimaryText"
         android:layout_marginLeft="20dp"
         android:layout_marginVertical="7dp"
         />
@@ -183,7 +189,7 @@
             android:layout_height="wrap_content"
             android:text="Show Distance"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/TherapiaGreen"
+            android:backgroundTint="@color/PrimaryPat"
             />
 
         <Button
@@ -192,7 +198,7 @@
             android:layout_height="wrap_content"
             android:text="Medical History"
             android:layout_margin="10dp"
-            android:backgroundTint="@color/TherapiaGreen"
+            android:backgroundTint="@color/PrimaryPat"
             />
 
     </LinearLayout>
@@ -203,8 +209,8 @@
         android:layout_height="wrap_content"
         android:text="Accept Job"
         android:layout_margin="10dp"
-        android:backgroundTint="@color/DoctorYellow"
-        android:textColor="@color/black"
+        android:backgroundTint="@color/PrimaryDoc"
+        android:textColor="@color/white"
         android:layout_gravity="center"
         />
 
@@ -214,8 +220,8 @@
         android:layout_height="wrap_content"
         android:text="Session Complete"
         android:layout_margin="10dp"
-        android:backgroundTint="#8BC34A"
-        android:textColor="@color/black"
+        android:backgroundTint="@color/TherapiaGreen"
+        android:textColor="@color/white"
         android:layout_gravity="center"
         />
 
@@ -225,8 +231,8 @@
         android:layout_height="wrap_content"
         android:text="Generate Report"
         android:layout_margin="10dp"
-        android:backgroundTint="#FFEB3B"
-        android:textColor="@color/black"
+        android:backgroundTint="@color/TherapiaGreen"
+        android:textColor="@color/white"
         android:layout_gravity="center"
         />
 

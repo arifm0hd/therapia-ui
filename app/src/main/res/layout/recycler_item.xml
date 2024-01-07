@@ -12,7 +12,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="130dp">
+        android:layout_height="110dp">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/recImage"

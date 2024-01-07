@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PatientProfile"
-    android:background="#EFEFF6">
+    android:background="@color/Background">
 
     <RelativeLayout
         android:id="@+id/header_layout"
@@ -15,23 +15,21 @@
 
         <TextView
             android:id="@+id/profile_text"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="20dp"
             android:text="Profile"
-            android:textColor="#222222"
-            android:textSize="40sp"
-            android:textStyle="bold" />
+            android:paddingTop="17dp"
+            android:paddingBottom="13dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_bold"
+            android:background="@color/PrimaryPat"
+        />
 
 
     </RelativeLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#3B3B3B"
-        android:layout_below="@+id/header_layout"/>
 
     <RelativeLayout
         android:id="@+id/info_layout"
@@ -274,20 +272,24 @@
         android:layout_above="@id/navbar_layout"
         android:layout_centerInParent="true"
         android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/PrimaryPat"
         android:text="Logout" />
 
+
+    <!--NAVBAR-->
     <LinearLayout
         android:id="@+id/navbar_layout"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="50dp"
         android:orientation="horizontal"
         android:background="@drawable/upper_rounded"
-        android:backgroundTint="#80A28F"
+        android:backgroundTint="@color/white"
         android:layout_alignParentBottom="true"
         android:paddingVertical="6dp"
         >
 
         <RelativeLayout
+            android:id="@+id/home_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -300,21 +302,12 @@
                 android:layout_height="40dp"
                 android:layout_centerHorizontal="true"
                 android:src="@drawable/baseline_home_24"
-                app:tint="@color/black"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Home"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/home_icon_navbar"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                />
+                app:tint="@color/SecondaryText" />
+
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/chat_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -323,25 +316,17 @@
 
             <ImageView
                 android:id="@+id/chat_icon_navbar"
-                android:layout_width="40dp"
+                android:layout_width="33dp"
                 android:layout_height="40dp"
                 android:layout_centerHorizontal="true"
                 android:src="@drawable/baseline_chat_24"
-                app:tint="@color/black"
+                app:tint="@color/SecondaryText"
                 />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Chat"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/chat_icon_navbar"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                />
+
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/booking_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -352,26 +337,16 @@
             <ImageView
                 android:id="@+id/booking_icon_navbar"
                 android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_height="35dp"
                 android:layout_centerHorizontal="true"
                 android:src="@drawable/baseline_calendar_month_24"
-                app:tint="@color/black"
-
+                app:tint="@color/SecondaryText"
                 />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Booking"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/booking_icon_navbar"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textStyle="bold"
 
-                />
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/activity_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -380,49 +355,35 @@
 
             <ImageView
                 android:id="@+id/activity_icon_navbar"
-                android:layout_width="40dp"
+                android:layout_width="33dp"
                 android:layout_height="40dp"
                 android:layout_centerHorizontal="true"
                 android:src="@drawable/baseline_assignment_24"
-                app:tint="@color/black"
+                app:tint="@color/SecondaryText"
                 />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Activity"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/activity_icon_navbar"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                />
+
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/profile_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1"
             >
 
+
             <ImageView
                 android:id="@+id/profile_icon_navbar"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:src="@drawable/baseline_person_24"
-                app:tint="#FFDE59"
+                app:tint="@color/PrimaryPat"
                 android:layout_centerHorizontal="true"
                 />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Profile"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/profile_icon_navbar"
-                android:textColor="#FFDE59"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                />
+
+
+
         </RelativeLayout>
 
     </LinearLayout>
